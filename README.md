@@ -56,10 +56,13 @@ sg = ec2_client.create_security_group(
     VpcId = vpc_id
 )
 ```
+
 4 - Retrieve  security group ID
 '''
 sg_id = sg['GroupId']
+
 '''
+
 5 -  Add ingress rule to allow port 80
 ```
 ec2_client.authorize_security_group_ingress(
@@ -75,6 +78,7 @@ ec2_client.authorize_security_group_ingress(
 )
 
 ```
+
 6 - Lauch ec2 instance
 ```
 ec2= boto3.client('ec2' , region_name='us-east-2' )
