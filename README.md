@@ -58,10 +58,10 @@ sg = ec2_client.create_security_group(
 ```
 
 4 - Retrieve  security group ID
-'''
+```
 sg_id = sg['GroupId']
 
-'''
+```
 
 5 -  Add ingress rule to allow port 80
 ```
