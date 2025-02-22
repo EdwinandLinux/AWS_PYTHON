@@ -39,8 +39,7 @@ sudo yum update -y
 sudo yum install httpd -y
 sudo systemctl enable -now httpd
 sudo systemctl start httpd
-echo "<h1> My Simple EC2 Website </h1>" | sudo tee  /var/www/html/index.html
-```
+echo "<h1> My Simple EC2 Website </h1>" | sudo tee  /var/www/html/index.html```
 ```
 2 - Create default VPC
 ```
